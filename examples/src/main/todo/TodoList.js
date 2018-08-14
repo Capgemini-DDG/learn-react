@@ -1,9 +1,14 @@
 import React from 'react'
+import TodoListItem from './TodoListItem';
 
-const TodoList = ({items}) => (
+const TodoList = ({items, handleDelete}) => (
   <ul>
     {items.map(item => (
-      <li key={item.id}>{item.text}</li>
+      <TodoListItem
+        key={item.id} 
+        item={item} 
+        handleDelete={handleDelete}
+      />
     ))}
   </ul>
 );

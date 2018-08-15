@@ -5,7 +5,7 @@ const SideMenu = () => (
   <div className='side-menu'>
     <ul>
       <li><Link to='/todo'>Todo</Link></li>
-      <li>Example Two</li>
+      <li><Link to='/weather'>Weather</Link></li>
       <li>Example Three</li>
     </ul>
   </div>

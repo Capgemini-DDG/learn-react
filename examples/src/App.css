@@ -95,3 +95,28 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+/**
+ * -------- Form /List Styles --------
+ */
+ form > input {
+  margin-bottom: 10px;
+} 
+
+li {
+  margin-bottom: 10px;
+}
+
+/**
+ * ---------- Weather Data Styles -------------
+ */
+.weather-data table {
+  border: 1px solid #ddd;
+    width: 100%;
+}
+
+.weather-data table td {
+  text-align: left;
+  padding: 5px;
+  border: 1px solid #ddd;
+}

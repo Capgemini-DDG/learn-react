@@ -12,6 +12,7 @@ const Header = () => (
       <div className="dropdown-content">
         <Link to='/todo'>Todo</Link>
         <Link to='/weather'>Weather</Link>
+        <Link to='/worldcoin'>World Coin</Link>
       </div>
     </div> 
   </div>

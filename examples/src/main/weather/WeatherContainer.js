@@ -25,8 +25,6 @@ class WeatherContainer extends Component {
       })
 
       getWeatherByCityName(cityName, response => {
-        console.log(JSON.stringify(response));
-      
         this.setState({
           weatherData: response,
           searching: false
@@ -48,7 +46,7 @@ class WeatherContainer extends Component {
       <div className='main-container'>
         <Title titleText='Weather App'/>
         <p>
-          This example is showing the usage of some of the component lifecycle methods in React.
+          This example is showing asynchronous data fetching in React.
         </p>
         {!this.state.searching
           ? 

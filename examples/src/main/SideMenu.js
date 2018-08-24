@@ -6,7 +6,7 @@ const SideMenu = () => (
     <ul>
       <li><Link to='/todo'>Todo</Link></li>
       <li><Link to='/weather'>Weather</Link></li>
-      <li>Example Three</li>
+      <li><Link to='/worldcoin'>World Coin</Link></li>      
     </ul>
   </div>
 );

@@ -1,11 +1,15 @@
 # Learn React
 
-This repository is a prupose built 'playground' for people to learn react through building out different styles of application throughout various stages. Listed below are the various projects contained within this repository, each one should contain a description of the project and its purpose. 
+This repository is a purpose built 'playground' for people to learn react through building out different styles of application throughout various stages. Listed below are the various projects contained within this repository, each one should contain a description of the project and its purpose. 
 
-## Weather App
+## Examples
 
-The weather app project is as it says on the tin: a weather app. It utilises the [Open Weather Map](https://openweathermap.org/) api to display weather information. 
+This project hosts various simple projects, all showcasing various React core concepts. So far there are the following projects:
+
+- [Todo App](https://github.com/Capgemini-DDG/learn-react/tree/master/examples/src/main/todo)
+- [Weather App](https://github.com/Capgemini-DDG/learn-react/tree/master/examples/src/main/weather)
+- [World Coin App](https://github.com/Capgemini-DDG/learn-react/tree/master/examples/src/main/worldcoin)
 
 ### Purpose
 
-To help show how to compose a simple app of several modular components, utilise a CSS framework and fetch data asynchronously with the fetch api.
+To help show how the different parts of the React core library are used in building up smaller applications. 

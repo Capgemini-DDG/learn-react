@@ -1,0 +1,61 @@
+{
+ "sectionDescriptions": {
+   "sectionOne": "It is essential for any team to have a firmly established identity and purpose. High performing teams have a clear identity and this is often highly visible within the team's workspace itself. To function well teams need to understand their purpose and make their purpose known to other teams. High performing teams often have a mission statement and work to a shared vision making it clear to other teams exactly what the team does.",
+   "sectionTwo": "Tbc dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd  ddddddddddddddddddddddddddddddddddddddddd ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"   
+ },
+ "sectionData": {
+   "sectionOne": [
+     {
+      "id": 1.1,
+      "attribute": "Identity",
+      "red": "Identity not clear",
+      "amber": "Identity established",
+      "green": "Identity established"
+    },
+    {
+      "id": 1.2,
+      "attribute": "Workspace",
+      "red": "Team workspace not identifiable",
+      "amber": "Team workspace may not clearly reflect team identity",
+      "green": "Team workspace clearly identifiable"
+    },
+    {
+      "id": 1.3,
+      "attribute": "Purpose",
+      "red": "Purpose not clear",
+      "amber": "Purpose emerging but not made known",
+      "green": "Purpose understood and made known"
+    },
+    {
+      "id": 1.4,
+      "attribute": "Shared Vision",
+      "red": "No shared vision or mission statement",
+      "amber": "Partial shared vision or mission statement",
+      "green": "Shared vision / mission statement established and communicated"
+    }
+  ],
+  "sectionTwo": [
+    {
+     "id": 2.1,
+     "attribute": "Team Members",
+     "red": "Team members not identified",
+     "amber": "Team members confirmed but some still working on other teams",
+     "green": "Team members confirmed and all working for team"
+   },
+   {
+     "id": 2.2,
+     "attribute": "Roles",
+     "red": "Roles not clearly defined",
+     "amber": "Roles defined",
+     "green": "Roles well defined"
+   },
+   {
+     "id": 2.3,
+     "attribute": "Roles Occupied",
+     "red": "Some roles missing from team",
+     "amber": "Some roles missing from team",
+     "green": "All roles present on team"
+   }
+ ]
+ }
+}

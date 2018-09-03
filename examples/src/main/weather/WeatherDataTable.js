@@ -6,12 +6,15 @@ const WeatherDataTable = ({data}) => {
     let newDate = new Date(0);
     newDate.setSeconds(epochTime);
     
-    return `${newDate.getHours()}:${newDate.getMinutes()}`;
+    let minutes = newDate.getMinutes() < 10 ? `0${newDate.getMinutes()}` : newDate.getMinutes();
+    let hours = newDate.getHours() < 10 ? `0${newDate.getHours()}` : newDate.getHours();
+
+    return `${hours}:${minutes}`;
   }
 
   const convertWindSpeed = () => {
-    let windSpeed = data.wind.speed * 2.5;
-    return Math.round(windSpeed);
+    let windSpeed = data.wind.speed * 2.24;
+    return windSpeed.toFixed(2);
   }
 
   return (

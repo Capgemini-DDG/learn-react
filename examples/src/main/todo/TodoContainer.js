@@ -4,6 +4,7 @@ import TodoList from './TodoList';
 import TodoForm from './TodoForm';
 
 class TodoContainer extends Component {
+
   state = {
     items: [],
     text: ''
@@ -30,7 +31,7 @@ class TodoContainer extends Component {
 
   handleChange = (event) => {
     this.setState({
-      text: event.target.value
+      text: event.target.value      
     })
   }
 

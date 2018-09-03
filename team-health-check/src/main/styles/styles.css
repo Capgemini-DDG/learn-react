@@ -1,0 +1,162 @@
+.header { grid-area: header; }
+.side-menu { grid-area: menu; }
+.main-container { grid-area: main; }
+.item4 { grid-area: right; }
+.footer { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+}
+
+.grid-container > div {
+  font-size: 18px;
+} 
+
+.row {
+  grid-row: 1;
+}
+
+.main-container {
+  padding: 15px;
+  margin-left: 50px;
+}
+
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/**
+ * ------------ Layout Styles -----------
+ */
+p.section-description {
+  width: 70%;
+}
+
+.survey-form {
+  list-style: none;  
+}
+
+.survey-form li {
+  margin-bottom: 10px;
+}
+
+.form-section {
+  margin-bottom: 30px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+      width: 100%;
+  }
+}
+
+.red-score {
+  color: red;
+}
+
+.amber-score {
+  color: orange;
+}
+
+.green-score {
+  color: green;
+}
+
+/**
+ * --------- Home Styles -----------
+ */
+p#total-score {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.nav-links a {
+  margin-right: 10px;
+}
+
+.main-container {
+  min-width: 100%;
+}

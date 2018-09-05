@@ -12,6 +12,7 @@ const Navbar = () => (
       <div className="dropdown-content">
         <Link to='/survey/section-one'>Section One</Link>
         <Link to='/survey/section-two'>Section Two</Link>
+        <Link to='/survey/section-three'>Section Three</Link>
       </div>
     </div> 
   </div>

@@ -6,6 +6,7 @@ const SideMenu = () => (
     <ul>
       <li><Link to='/survey/section-one'>Section One</Link></li>
       <li><Link to='/survey/section-two'>Section Two</Link></li>
+      <li><Link to='/survey/section-three'>Section Three</Link></li>
     </ul>
   </div>
 );

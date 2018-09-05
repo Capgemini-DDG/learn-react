@@ -1,61 +1,123 @@
 {
- "sectionDescriptions": {
-   "sectionOne": "It is essential for any team to have a firmly established identity and purpose. High performing teams have a clear identity and this is often highly visible within the team's workspace itself. To function well teams need to understand their purpose and make their purpose known to other teams. High performing teams often have a mission statement and work to a shared vision making it clear to other teams exactly what the team does.",
-   "sectionTwo": "Tbc dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd  ddddddddddddddddddddddddddddddddddddddddd ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"   
- },
- "sectionData": {
-   "sectionOne": [
-     {
-      "id": 1.1,
-      "attribute": "Identity",
-      "red": "Identity not clear",
-      "amber": "Identity established",
-      "green": "Identity established"
-    },
-    {
-      "id": 1.2,
-      "attribute": "Workspace",
-      "red": "Team workspace not identifiable",
-      "amber": "Team workspace may not clearly reflect team identity",
-      "green": "Team workspace clearly identifiable"
-    },
-    {
-      "id": 1.3,
-      "attribute": "Purpose",
-      "red": "Purpose not clear",
-      "amber": "Purpose emerging but not made known",
-      "green": "Purpose understood and made known"
-    },
-    {
-      "id": 1.4,
-      "attribute": "Shared Vision",
-      "red": "No shared vision or mission statement",
-      "amber": "Partial shared vision or mission statement",
-      "green": "Shared vision / mission statement established and communicated"
+ "sectionData": [
+   {
+    "id": "section-one",
+    "title": "Team Identity and Purpose",
+    "description": "It is essential for any team to have a firmly established identity and purpose. High performing teams have a clear identity and this is often highly visible within the team's workspace itself. To function well teams need to understand their purpose and make their purpose known to other teams. High performing teams often have a mission statement and work to a shared vision making it clear to other teams exactly what the team does.",
+    "questions": [
+      {
+        "id": 1.1,
+        "attribute": "Identity",
+        "red": "Identity not clear",
+        "amber": "Identity established",
+        "green": "Identity established"
+      },
+      {
+        "id": 1.2,
+        "attribute": "Workspace",
+        "red": "Team workspace not identifiable",
+        "amber": "Team workspace may not clearly reflect team identity",
+        "green": "Team workspace clearly identifiable"
+      },
+      {
+        "id": 1.3,
+        "attribute": "Purpose",
+        "red": "Purpose not clear",
+        "amber": "Purpose emerging but not made known",
+        "green": "Purpose understood and made known"
+      },
+      {
+        "id": 1.4,
+        "attribute": "Shared Vision",
+        "red": "No shared vision or mission statement",
+        "amber": "Partial shared vision or mission statement",
+        "green": "Shared vision / mission statement established and communicated"
+      }
+    ]
+  },
+  {
+    "id": "section-two",
+    "title": "Team Members and Roles",
+    "description": "It is essential for any team to have a firmly established identity and purpose. High performing teams have a clear identity and this is often highly visible within the team's workspace itself. To function well teams need to understand their purpose and make their purpose known to other teams. High performing teams often have a mission statement and work to a shared vision making it clear to other teams exactly what the team does.",
+    "questions": [
+      {
+      "id": 2.1,
+        "attribute": "Team Members",
+        "red": "Team members not identified",
+        "amber": "Team members confirmed but some still working on other teams",
+        "green": "Team members confirmed and all working for team"
+      },
+      {
+        "id": 2.2,
+        "attribute": "Roles",
+        "red": "Roles not clearly defined",
+        "amber": "Roles defined",
+        "green": "Roles well defined"
+      },
+      {
+        "id": 2.3,
+        "attribute": "Roles Occupied",
+        "red": "Some roles missing from team",
+        "amber": "Some roles missing from team",
+        "green": "All roles present on team"
+      }
+    ]
+  },
+  {
+    "id": "section-three",
+    "title": "Team Culture",
+    "description": "High performing teams demonstrate the following attributes: continuous learning and improvement, strong focus on automation, quality and DevOps as well as respect for people and helpfulness.",
+    "questions": [
+      {
+      "id": 3.1,
+        "attribute": "Continuous Learning",
+        "red": "No evidence of continuous learning",
+        "amber": "Some commitment to regular learning",
+        "green": "Continuous learning culture within team"
+      },
+      {
+        "id": 3.2,
+        "attribute": "Continuous Improvement",
+        "red": "No evidence of continuous improvement",
+        "amber": "Evidence of making some improvements",
+        "green": "Continuous improvement mindset within team"
+      },
+      {
+        "id": 3.3,
+        "attribute": "Focus On Automation",
+        "red": "No commitment to automation with mostly manual processes in place",
+        "amber": "Commitment to automation with some automation in place and others planned",
+        "green": "Strong commitment to automation with few manual processes"
+      },
+      {
+        "id": 3.4,
+          "attribute": "Focus On Quality",
+          "red": "No evidence of quality or metrics",
+          "amber": "Some commitment to quality and metrics",
+          "green": "Strong focus on quality and metrics"
+        },
+        {
+          "id": 3.5,
+          "attribute": "Focus On DevOps",
+          "red": "DevOps not embraced",
+          "amber": "DevOps partly embraced",
+          "green": "DevOps fully embraced"
+        },
+        {
+          "id": 3.6,
+          "attribute": "Respect For People",
+          "red": "Unsafe environment were not all views heard or valued",
+          "amber": "Safe environment but not all views heard or valued",
+          "green": "Safe environment were all views heard and valued"
+        },
+        {
+          "id": 3.7,
+          "attribute": "Helpfulness",
+          "red": "Rarely offer or seek help",
+          "amber": "Sometimes offer or seek help",
+          "green": "Regularly offer and seek help"
+        }
+    ]
     }
-  ],
-  "sectionTwo": [
-    {
-     "id": 2.1,
-     "attribute": "Team Members",
-     "red": "Team members not identified",
-     "amber": "Team members confirmed but some still working on other teams",
-     "green": "Team members confirmed and all working for team"
-   },
-   {
-     "id": 2.2,
-     "attribute": "Roles",
-     "red": "Roles not clearly defined",
-     "amber": "Roles defined",
-     "green": "Roles well defined"
-   },
-   {
-     "id": 2.3,
-     "attribute": "Roles Occupied",
-     "red": "Some roles missing from team",
-     "amber": "Some roles missing from team",
-     "green": "All roles present on team"
-   }
- ]
- }
+  ]
 }

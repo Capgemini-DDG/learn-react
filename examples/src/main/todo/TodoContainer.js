@@ -23,6 +23,7 @@ class TodoContainer extends Component {
       id: Date.now()
     };
 
+
     this.setState(prevState => ({
       items: prevState.items.concat(newTodo),
       text: ''   

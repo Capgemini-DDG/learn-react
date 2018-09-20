@@ -13,3 +13,25 @@ This project hosts various simple projects, all showcasing various React core co
 ### Purpose
 
 To help show how the different parts of the React core library are used in building up smaller applications. 
+
+## Useful Links
+
+Below are some links to useful plugins for VSCode:
+
+- [Article for react extensions](https://fullstackengine.net/recommended-vscode-extensions-react/)
+- [React Food Truck](https://marketplace.visualstudio.com/items?itemName=burkeholland.react-food-truck)
+
+The following extensions can just be searched for in VSCode:
+
+- Babel ES6/7
+- Beautify
+- Code Spell Checker
+- ESLint
+- exports autocomplete
+- HTML Snippets
+- npm
+- npm intellisense
+- Node.js Modules Intellisense
+- React Pure to Class
+- Reactjs Code Snippets
+- TODO Highlight

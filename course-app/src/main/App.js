@@ -1,49 +1,37 @@
-import React, {Component} from 'react';
-import TodoForm from './components/TodoForm';
-import TodoList from './components/TodoList';
+import React from 'react';
+import WeatherForm from './components/WeatherForm';
+import WeatherResultsTable from './components/WeatherResultsTable';
+import { getWeatherByCityName } from './ApiUtils';
 
-class App extends Component {
+class App extends React.Component {
 
   state = {
-    todoItems: [],
-    text: ''
+    searchText: ''
   }
 
   handleChange = event => {
     this.setState({
-      text: event.target.value
+      searchText: event.target.value
     })
   }
 
-  handleSubmit = event => {    
+  handleSubmit = event => {
     event.preventDefault();
-
-    const todoText = this.state.text;
-
-    if(!todoText) {
-      return;
-    }
-
-    const newTodo = {
-      todoItem: todoText,
-      id: Date.now()
-    }
-
-    this.setState(prevState => ({            
-      todoItems: prevState.todoItems.concat(newTodo),
-      text: ''
-    }))
+    
+    const searchText = this.state.searchText;
+    getWeatherByCityName(searchText, result => {
+      console.log(result);
+    })
   }
 
   render() {
-    return (
+    return (    
       <div>
-        <TodoForm 
-          todoText={this.state.text}
-          handleChange={this.handleChange}
+        <WeatherForm 
           handleSubmit={this.handleSubmit}
+          handleChange={this.handleChange}
         />
-        <TodoList todoList={this.state.todoItems}/>
+        <WeatherResultsTable/>
       </div>
     )
   }

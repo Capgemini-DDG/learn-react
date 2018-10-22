@@ -6,7 +6,8 @@ import { getWeatherByCityName } from './ApiUtils';
 class App extends React.Component {
 
   state = {
-    searchText: ''
+    searchText: '',
+    data: {}
   }
 
   handleChange = event => {
@@ -20,7 +21,7 @@ class App extends React.Component {
     
     const searchText = this.state.searchText;
     getWeatherByCityName(searchText, result => {
-      console.log(result);
+      this.setState({ data: result })
     })
   }
 
@@ -31,7 +32,9 @@ class App extends React.Component {
           handleSubmit={this.handleSubmit}
           handleChange={this.handleChange}
         />
-        <WeatherResultsTable/>
+        <WeatherResultsTable 
+          data={this.state.data}
+        />
       </div>
     )
   }

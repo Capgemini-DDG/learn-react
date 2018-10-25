@@ -1,6 +1,7 @@
 import React from 'react';
 
-const WeatherResultsTable = props => (
+const WeatherResultsTable = ({data}) => (
+
   <table>
     <thead>
       <tr>
@@ -11,7 +12,7 @@ const WeatherResultsTable = props => (
     <tbody>
       <tr>
         <td>Temperature</td>
-        <td>{props.data.main.temp}</td>
+        <td>{data.main.temp}</td>
       </tr>
     </tbody>
   </table>

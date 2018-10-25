@@ -7,7 +7,8 @@ class App extends React.Component {
 
   state = {
     searchText: '',
-    data: {}
+    searching: false,
+    data: null
   }
 
   handleChange = event => {
@@ -19,22 +20,36 @@ class App extends React.Component {
   handleSubmit = event => {
     event.preventDefault();
     
+    this.setState({
+      searching: true
+    })
+
     const searchText = this.state.searchText;
     getWeatherByCityName(searchText, result => {
-      this.setState({ data: result })
+      this.setState({ 
+        data: result,
+        searching: false
+      })
     })
   }
 
   render() {
     return (    
       <div>
-        <WeatherForm 
-          handleSubmit={this.handleSubmit}
-          handleChange={this.handleChange}
-        />
-        <WeatherResultsTable 
-          data={this.state.data}
-        />
+        {this.state.searching && <p>Searching...</p>}
+        {!this.state.searching && 
+          <WeatherForm 
+            handleSubmit={this.handleSubmit}
+            handleChange={this.handleChange}
+          />
+        }
+        {!this.state.searching && this.state.data ? 
+          <WeatherResultsTable 
+            data={this.state.data}
+          />
+          :
+          <p>Please do a search</p>
+        }
       </div>
     )
   }
